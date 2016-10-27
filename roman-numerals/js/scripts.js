@@ -31,6 +31,29 @@ function converter(userInput) {
     var thirdToLastNumber = inputArray.pop();
     var fourthToLastNumber = inputArray.pop();
 
+    
+    if (secondToLastNumber === "1") {
+        outputArray.push("X");
+    } else if (secondToLastNumber === "2") {
+        outputArray.push("XX");
+    } else if (secondToLastNumber === "3") {
+      outputArray.push("XXX");
+    } else if (secondToLastNumber=== "4") {
+      outputArray.push("XL");
+    } else if (secondToLastNumber === "5") {
+      outputArray.push("L");
+    } else if (fsecondToLastNumber=== "6") {
+      outputArray.push("LX");
+    } else if (secondToLastNumber === "7") {
+      outputArray.push("LXX");
+    } else if (secondToLastNumber === "8") {
+      outputArray.push("LXXX");
+    } else if (secondToLastNumber === "9") {
+      outputArray.push("XC");
+    } else if (secondToLastNumber === "0") {
+      outputArray.push("");
+      // will need to add exceptions to this rule for divisible by 10, 50, etc...
+    }
 
     if (finalNumber === "1") {
         outputArray.push("I");
@@ -54,6 +77,8 @@ function converter(userInput) {
       outputArray.push("X");
       // will need to add exceptions to this rule for divisible by 10, 50, etc...
     }
+
+
 
   var finalOutput = outputArray.join("");
   return finalOutput;
