@@ -31,7 +31,33 @@ function converter(userInput) {
     var thirdToLastNumber = inputArray.pop();
     var fourthToLastNumber = inputArray.pop();
 
-    
+
+    if (fourthToLastNumber === "1" || fourthToLastNumber === "2" || fourthToLastNumber === "3") {
+      outputArray.push("M");
+    }
+
+    if (thirdToLastNumber === "1") {
+        outputArray.push("C");
+    } else if (thirdToLastNumber === "2") {
+        outputArray.push("CC");
+    } else if (thirdToLastNumber === "3") {
+      outputArray.push("CCC");
+    } else if (thirdToLastNumber === "4") {
+      outputArray.push("CD");
+    } else if (thirdToLastNumber === "5") {
+      outputArray.push("D");
+    } else if (thirdToLastNumber === "6") {
+      outputArray.push("DC");
+    } else if (thirdToLastNumber === "7") {
+      outputArray.push("DCC");
+    } else if (thirdToLastNumber === "8") {
+      outputArray.push("DCCC");
+    } else if (thirdToLastNumber === "9") {
+      outputArray.push("CM");
+    } else if (thirdToLastNumber === "0") {
+      outputArray.push("");
+    }
+
     if (secondToLastNumber === "1") {
         outputArray.push("X");
     } else if (secondToLastNumber === "2") {
@@ -42,7 +68,7 @@ function converter(userInput) {
       outputArray.push("XL");
     } else if (secondToLastNumber === "5") {
       outputArray.push("L");
-    } else if (fsecondToLastNumber=== "6") {
+    } else if (secondToLastNumber === "6") {
       outputArray.push("LX");
     } else if (secondToLastNumber === "7") {
       outputArray.push("LXX");
@@ -52,7 +78,6 @@ function converter(userInput) {
       outputArray.push("XC");
     } else if (secondToLastNumber === "0") {
       outputArray.push("");
-      // will need to add exceptions to this rule for divisible by 10, 50, etc...
     }
 
     if (finalNumber === "1") {
