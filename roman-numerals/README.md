@@ -1,4 +1,11 @@
+# Roman Numeral converter
+_Epicodus Introduction to Programming exercise, Week Three, 10-27-16_
+by Jonathan Tom and Suzi Rubino
 
+# Description
+Create web page with form for submitting number to convert to roman numeral.
+
+# Specifications
 Deals with non-numeric values
 input = a
 output = undefined alert
@@ -7,9 +14,9 @@ Deals with negative numbers
 input = -2
 output = undefined alert
 
-Deals with writing only zero (there is no roman numeral for zero)
+Deals with converting zero (there is no roman numeral for zero)
 input = 0
-output = 0
+output = empty value
 
 Not greater than 3999
 input = 4000
@@ -23,10 +30,6 @@ if 500, then D
 if 1000, then M
 
 if not...
-
-if last digit entered is 0, then last roman numeral will X, unless number is evenly divisible by 50, 100, 500, or 1000
-- input: 310
-- output: CCCX
 
 if last digit entered is 1-3, then last roman numerals will be I, II, or III
 - input: 313
@@ -101,3 +104,11 @@ if third to last digit is 9, then third to last roman numerals will be CM
 in any 4 digit number, then fourth to last roman numeral will be M
 - input: 1444
 - output: MCDXLIV
+
+#Setup
+Clone repository and open in browser
+
+#Technologies Used
+1. html
+2. css
+3. javascript
